@@ -247,6 +247,7 @@
 @property (nonatomic, copy) void (^imagePickerControllerDidCancelHandle)(void);
 @property (nonatomic, copy) void (^didFinishPickingVideoHandle)(UIImage *coverImage,PHAsset *asset);
 @property (nonatomic, copy) void (^didFinishPickingGifImageHandle)(UIImage *animatedImage,id sourceAssets);
+@property (nonatomic, copy) void (^imagePickerControllerWillDisappearHandle)(void);
 
 @property (nonatomic, weak) id<TZImagePickerControllerDelegate> pickerDelegate;
 

@@ -140,6 +140,9 @@
     [super viewWillDisappear:animated];
     [UIApplication sharedApplication].statusBarStyle = _originStatusBarStyle;
     [self hideProgressHUD];
+    if (self.imagePickerControllerWillDisappearHandle) {
+        self.imagePickerControllerWillDisappearHandle();
+    }
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
